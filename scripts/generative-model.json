@@ -1,0 +1,16 @@
+{
+  "model": "SDXS-512-DreamShaper",
+  "source": "https://huggingface.co/IDKiro/sdxs-512-dreamshaper",
+  "conversion": "https://huggingface.co/akleine/sdxs-512",
+  "file": "sdxs.gguf",
+  "url": "https://huggingface.co/concedo/sdxs-512-tinySDdistilled-GGUF/resolve/3144d898d61492f8382ffcabec055733fc5b2a0e/sdxs-512-tinySDdistilled_Q8_0.gguf",
+  "sha256": "409ab23582ee074c6b9d5395784fc0741b0599fb9d138686c69087c71678eb6a",
+  "bytes": 682847200,
+  "license": "CreativeML Open RAIL++-M / base Open RAIL-M",
+  "runtimeCommit": "3f8527a",
+  "runtimeTag": "master-929-3f8527a",
+  "macTarget": "13.0",
+  "sampleSteps": 1,
+  "cfgScale": 1,
+  "resolution": 512
+}

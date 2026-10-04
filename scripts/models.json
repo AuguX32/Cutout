@@ -1,0 +1,52 @@
+[
+  {
+    "id": "u2netp",
+    "url": "https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2netp.onnx",
+    "sha256": "309c8469258dda742793dce0ebea8e6dd393174f89934733ecc8b14c76f4ddd8"
+  },
+  {
+    "id": "silueta",
+    "url": "https://github.com/danielgatis/rembg/releases/download/v0.0.0/silueta.onnx",
+    "sha256": "75da6c8d2f8096ec743d071951be73b4a8bc7b3e51d9a6625d63644f90ffeedb"
+  },
+  {
+    "id": "u2net",
+    "url": "https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.onnx",
+    "sha256": "8d10d2f3bb75ae3b6d527c77944fc5e7dcd94b29809d47a739a7a728a912b491"
+  },
+  {
+    "id": "human",
+    "url": "https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net_human_seg.onnx",
+    "sha256": "01eb6a29a5c4d8edb30b56adad9bb3a2a0535338e480724a213e0acfd2d1c73c"
+  },
+  {
+    "id": "anime",
+    "url": "https://github.com/danielgatis/rembg/releases/download/v0.0.0/isnet-anime.onnx",
+    "sha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99"
+  },
+  {
+    "id": "birefnet-lite",
+    "url": "https://github.com/danielgatis/rembg/releases/download/v0.0.0/BiRefNet-general-bb_swin_v1_tiny-epoch_232.onnx",
+    "sha256": "5600024376f572a557870a5eb0afb1e5961636bef4e1e22132025467d0f03333"
+  },
+  {
+    "id": "lama",
+    "url": "https://media.githubusercontent.com/media/opencv/opencv_zoo/main/models/inpainting_lama/inpainting_lama_2025jan.onnx",
+    "sha256": "7df918ac3921d3daf0aae1d219776cf0dc4e4935f035af81841b40adcf74fdf2"
+  },
+  {
+    "id": "migan",
+    "url": "https://huggingface.co/andraniksargsyan/migan/resolve/1538c135034b8cfe7a8472f34d09c8a5a45b17a7/migan_pipeline_v2.onnx",
+    "sha256": "6f1f3530a1a2324b19752018ce756088b07973cda8d7d890034ace5c8a48c40b"
+  },
+  {
+    "id": "birefnet",
+    "url": "https://huggingface.co/onnx-community/BiRefNet-ONNX/resolve/8a33de5/onnx/model_fp16.onnx",
+    "sha256": "3654c741eb80bd926ada8fed1713b506ccf8d30eb1f6487e87eb9f234f33df09"
+  },
+  {
+    "id": "biglama",
+    "url": "https://huggingface.co/Carve/LaMa-ONNX/resolve/c3c0c9e468934d62e79c329e35d82dd09ff8c444/lama_fp32.onnx",
+    "sha256": "1faef5301d78db7dda502fe59966957ec4b79dd64e16f03ed96913c7a4eb68d6"
+  }
+]

@@ -1,0 +1,16 @@
+node_modules/
+.sites-runtime/
+release/
+desktop-models/
+desktop-runtime/
+
+node-runtime/
+generative-runtime/
+generative-models/
+
+dist/
+work/
+.DS_Store
+.env
+.env.*
+*.log

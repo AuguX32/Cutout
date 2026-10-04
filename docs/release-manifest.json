@@ -1,0 +1,58 @@
+{
+  "version": "7.0.0",
+  "repository": "AuguX32/CUTOUT",
+  "tag": "v7.0.0",
+  "files": [
+    {
+      "name": "CUTOUT-7.0.0-macOS-arm64.dmg",
+      "size": 2361198058,
+      "parts": [
+        {
+          "name": "CUTOUT-7.0.0-macOS-arm64.dmg.part01",
+          "size": 1610612736,
+          "sha256": "06d51c275ad8b96205e960571dce83ace9f05b04f2a0b4477e31a83055e55dfc"
+        },
+        {
+          "name": "CUTOUT-7.0.0-macOS-arm64.dmg.part02",
+          "size": 750585322,
+          "sha256": "4a58961e91e8996fdb7f4e62f376a27deb5ce360bf19c2488e335b93e823f4cc"
+        }
+      ],
+      "sha256": "ec037f47381255b02e3f887cedb2220a8568b425a51c1aecccc315cdfc67b4b1"
+    },
+    {
+      "name": "CUTOUT-7.0.0-macOS-x64.dmg",
+      "size": 2372020876,
+      "parts": [
+        {
+          "name": "CUTOUT-7.0.0-macOS-x64.dmg.part01",
+          "size": 1610612736,
+          "sha256": "6e7c841e02055f530cbcee96a5f43f682bbbfc6a0dcc828fd3e08a6d025dbbff"
+        },
+        {
+          "name": "CUTOUT-7.0.0-macOS-x64.dmg.part02",
+          "size": 761408140,
+          "sha256": "756000d23977e470db82ccfd380ecb69b18fc6067172729f9f5ff31a5a07728a"
+        }
+      ],
+      "sha256": "6d893f16b37d32e9613641b8e74622f1470bcc49a701b6fa80755c21eaac5e4a"
+    },
+    {
+      "name": "CUTOUT-7.0.0-Windows-x64-Setup.exe",
+      "size": 2260682919,
+      "parts": [
+        {
+          "name": "CUTOUT-7.0.0-Windows-x64-Setup.exe.part01",
+          "size": 1610612736,
+          "sha256": "145f15b90157f6057767f046aa284952ce8e9552a7ac5494ed28cc0ce3ff6a6d"
+        },
+        {
+          "name": "CUTOUT-7.0.0-Windows-x64-Setup.exe.part02",
+          "size": 650070183,
+          "sha256": "288c243477588323534f3543fadf2d542785f672d654d19f924e730f3b764db1"
+        }
+      ],
+      "sha256": "aa96bd013b5ec6d46874db64563e80ffc7bcabe841c45fcdec3996a1c5469ba7"
+    }
+  ]
+}

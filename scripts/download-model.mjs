@@ -1,0 +1,14 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {createHash} from 'node:crypto';
+const base='https://staticimgly.com/@imgly/background-removal-data/1.7.0/dist/';
+const destination=path.resolve('desktop-models');
+await fs.mkdir(destination,{recursive:true});
+const response=await fetch(new URL('resources.json',base));if(!response.ok)throw Error('Model manifest: '+response.status);
+const manifest=await response.json();
+const selected=Object.fromEntries(Object.entries(manifest).filter(([name])=>name.includes('isnet_quint8') || name==='/onnxruntime-web/ort-wasm-simd-threaded.wasm' || name==='/onnxruntime-web/ort-wasm-simd-threaded.mjs'));
+if(Object.keys(selected).length!==3)throw Error('Unexpected model manifest: '+Object.keys(selected));
+const chunks=[...new Map(Object.values(selected).flatMap(r=>r.chunks).map(c=>[c.name,c])).values()];
+let index=0;
+await Promise.all(Array.from({length:4},async()=>{while(index<chunks.length){const chunk=chunks[index++];const target=path.join(destination,chunk.name);let bytes;try{bytes=await fs.readFile(target);}catch{}if(!bytes || createHash('sha256').update(bytes).digest('hex')!==chunk.hash){const r=await fetch(new URL(chunk.name,base));if(!r.ok)throw Error('Model chunk: '+r.status);bytes=Buffer.from(await r.arrayBuffer());if(createHash('sha256').update(bytes).digest('hex')!==chunk.hash)throw Error('Model hash mismatch');await fs.writeFile(target,bytes);}console.log('Verified '+chunk.name.slice(0,12));}}));
+await fs.writeFile(path.join(destination,'resources.json'),JSON.stringify(selected));console.log('Offline model ready.');
